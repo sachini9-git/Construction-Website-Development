@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <section class="admin-panel">
+        <h2>Admin Panel</h2>
+        <table class="admin-table">
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>NIC No.</th>
+                <th>Selected Service</th>
+                <th>Leave a Note</th>
+                <th>Contact Details</th>
+            </tr>
+            <?php
+            // Your PHP code here to fetch and display data in table rows
+            require_once "admin.php";
+            ?>
+        </table>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+
+</html>
