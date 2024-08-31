@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="High-Quality Transparent File-02.png"alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#service">ABOUT US</a></li>
+                <li><a href="book now.html">BOOK NOW</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+               </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()" ></i>
+        </nav>
+        
+    <h1>Book Now</h1>
+
+    </section>
+    <section class="book-now">
+        <h2></h2>
+        <form action="book now.php" class="book-now-form">
+            <div class="form-group">
+                <label for="name">Your Username:</label><br>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Your Phone Number:</label><br>
+                <input type="tel" id="contact-no" name="contact-no" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Preferred Time:</label><br>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Preferred Date:</label><br>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Select Services:</label><br>
+
+
+
+
+
+                <div class="checkbox">
+                    <label>
+                     <input type="checkbox" name="services" value="">
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     Exterior                     </label>
+                  </div>
+                  
+                  <!-- Checked checkbox -->
+                  <div class="checkbox">
+                    <label>
+                     <input type="checkbox"   name="services" value="" checked>
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     Interior
+                     </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <label>
+                     <input type="checkbox" name="services" value="">
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     Planning
+                     </label>
+                  </div>
+                  
+                  <!-- Checked checkbox -->
+                  <div class="checkbox">
+                    <label>
+                     <input type="checkbox" value="" checked>
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     Consultation
+                     </label>
+                  </div>
+                  
+                  
+                  <div class="checkbox">
+                    <label>
+                     <input type="checkbox"   name="services" value="">
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     Construction
+                     </label>
+                  </div>
+                  
+                  <!-- Checked checkbox -->
+                  <div class="checkbox">
+                    <label>
+                     <input type="checkbox"    name="services" value="" checked>
+                     <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                     Furniture
+                     </label>
+                  </div> <br>
+                  
+                   
+            <div class="form-group">
+                <label for="reason">Reason:</label><br>
+                <input type="text" id="reason" name="reason" required>
+            </div>
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </section>
+
+    <footer>
+        <img src="High-Quality Transparent File-02.png" alt="Company Logo" id="company-logo">
+        <p>Welcome to Bega Ventures. Bega Ventures is a renowned construction company committed to delivering high-quality and innovative solutions to our clients.</p>
+        
+        <ul class="social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+    
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#service">ABOUT US</a></li>
+            <li><a href="book now.html">BOOK NOW</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            
+        </ul>
+      </footer>
+
+
+
+    <!------Javascript for Toggle Me--------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        
+    </script>
+    <script src="book now.js"></script>
+    
+</body>
+</html>
